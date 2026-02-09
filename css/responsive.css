@@ -1,0 +1,435 @@
+/* ============================================
+   Responsive Design Styles
+   Mobile, Tablet, Desktop breakpoints
+   ============================================ */
+
+/* === Additional Layout Styles === */
+.solutions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+.solution-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.solution-item.reverse {
+    direction: rtl;
+}
+
+.solution-item.reverse>* {
+    direction: ltr;
+}
+
+.solution-image-placeholder {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.solution-content h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-4);
+    color: var(--color-neutral-900);
+}
+
+.solution-content p {
+    color: var(--color-neutral-700);
+    margin-bottom: var(--spacing-4);
+    line-height: 1.7;
+}
+
+.solution-features {
+    list-style: none;
+    margin-bottom: var(--spacing-6);
+}
+
+.solution-features li {
+    padding: var(--spacing-2) 0;
+    color: var(--color-neutral-700);
+    font-size: var(--font-size-base);
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(135deg, var(--color-primary-deep), var(--color-primary-blue));
+    padding: var(--spacing-20) 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-8);
+}
+
+.stat-card {
+    text-align: center;
+    padding: var(--spacing-6);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+    font-size: var(--font-size-5xl);
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+}
+
+.stat-unit {
+    font-size: var(--font-size-2xl);
+    color: var(--color-accent-orange);
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: var(--spacing-2);
+}
+
+/* Business Cards */
+.business-card {
+    background: white;
+    padding: var(--spacing-10);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-neutral-200);
+    transition: all var(--transition-base);
+}
+
+.business-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.business-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-4);
+}
+
+.business-card h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-4);
+    color: var(--color-neutral-900);
+}
+
+.business-card p {
+    color: var(--color-neutral-700);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-6);
+}
+
+.business-list {
+    list-style: none;
+    margin-bottom: var(--spacing-6);
+}
+
+.business-list li {
+    padding: var(--spacing-2) 0;
+    padding-left: var(--spacing-6);
+    position: relative;
+    color: var(--color-neutral-700);
+}
+
+.business-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-blue);
+    font-weight: 700;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--color-secondary-forest), var(--color-secondary-green));
+    padding: var(--spacing-24) 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: var(--font-size-4xl);
+    color: white;
+    margin-bottom: var(--spacing-4);
+}
+
+.cta-content p {
+    font-size: var(--font-size-lg);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-8);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn-outline:hover {
+    background: white;
+    color: var(--color-secondary-green);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-2);
+}
+
+.mobile-menu-toggle span {
+    width: 24px;
+    height: 3px;
+    background: var(--color-neutral-800);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ============================================
+   Tablet Styles (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-6xl: 3rem;
+        --font-size-5xl: 2.5rem;
+        --font-size-4xl: 2rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-5);
+    }
+
+    section {
+        padding: var(--spacing-16) 0;
+    }
+
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .solution-item {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-item.reverse {
+        direction: ltr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   Mobile Styles (up to 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    :root {
+        --font-size-6xl: 2.5rem;
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --font-size-3xl: 1.5rem;
+        --font-size-2xl: 1.25rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-4);
+    }
+
+    section {
+        padding: var(--spacing-12) 0;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: var(--spacing-6);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-120%);
+        transition: transform var(--transition-base);
+        z-index: var(--z-dropdown);
+        gap: var(--spacing-2);
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+    }
+
+    .nav-link {
+        display: block;
+        padding: var(--spacing-3) var(--spacing-4);
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+        padding: var(--spacing-8) 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    /* Grids */
+    .grid-cols-2,
+    .grid-cols-3,
+    .grid-cols-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+
+    /* Cards */
+    .card {
+        padding: var(--spacing-6);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+
+    .footer {
+        padding: var(--spacing-12) 0 var(--spacing-6);
+    }
+
+    /* Buttons */
+    .btn-large {
+        padding: var(--spacing-3) var(--spacing-6);
+        font-size: var(--font-size-base);
+    }
+
+    /* CTA Section */
+    .cta-content h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .cta-content p {
+        font-size: var(--font-size-base);
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   Small Mobile (up to 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    :root {
+        --font-size-6xl: 2rem;
+        --font-size-5xl: 1.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-stat-number {
+        font-size: var(--font-size-2xl);
+    }
+
+    .stat-number {
+        font-size: var(--font-size-4xl);
+    }
+
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+
+    .header,
+    .footer,
+    .btn,
+    .mobile-menu-toggle,
+    .scroll-indicator {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}

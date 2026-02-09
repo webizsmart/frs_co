@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GRS USA LLC 문의하기. 프로젝트 견적, 기술 상담, 파트너십 문의를 남겨주세요.">
+    <title>문의하기 | GRS USA LLC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-logo">
+                    <span>GRS</span> USA LLC
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">홈</a></li>
+                    <li><a href="about.html" class="nav-link">회사소개</a></li>
+                    <li><a href="solutions.html" class="nav-link">기술 & 솔루션</a></li>
+                    <li><a href="business.html" class="nav-link">사업분야</a></li>
+                    <li><a href="projects.html" class="nav-link">프로젝트</a></li>
+                    <li><a href="partnership.html" class="nav-link">협력방안</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">문의하기</a></li>
+                </ul>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>문의하기</h1>
+            <p>GRS 전문가가 신속하게 답변해 드립니다</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>프로젝트 문의</h2>
+                    <p class="form-description">
+                        프로젝트에 대한 상세 정보를 남겨주시면,
+                        24시간 내 전문가가 연락드립니다.
+                    </p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">이름 *</label>
+                            <input type="text" id="name" name="name" required placeholder="홍길동">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">회사명 *</label>
+                            <input type="text" id="company" name="company" required placeholder="주식회사 GRS">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">이메일 *</label>
+                                <input type="email" id="email" name="email" required placeholder="example@company.com">
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">전화번호 *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678">
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiryType">문의 유형 *</label>
+                            <select id="inquiryType" name="inquiryType" required>
+                                <option value="">선택해주세요</option>
+                                <option value="project">프로젝트 견적 문의</option>
+                                <option value="technical">기술 상담</option>
+                                <option value="partnership">파트너십 문의</option>
+                                <option value="other">기타 문의</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">상세 내용 *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="프로젝트 규모, 위치, 예상 시공 시기 등을 상세히 기재해주세요."></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                <span>개인정보 수집 및 이용에 동의합니다</span>
+                            </label>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">문의 전송</button>
+                    </form>
+                </div>
+
+                <!-- Cost Calculator -->
+                <div class="calculator-wrapper">
+                    <div class="calculator-box">
+                        <h3>💰 비용 절감 계산기</h3>
+                        <p>프로젝트 규모를 입력하고 예상 절감액을 확인하세요</p>
+
+                        <div id="costCalculator" class="calculator">
+                            <div class="calc-group">
+                                <label for="projectArea">시공 면적 (m²)</label>
+                                <input type="number" id="projectArea" placeholder="1000" min="1">
+                            </div>
+
+                            <div class="calc-group">
+                                <label for="projectType">프로젝트 유형</label>
+                                <select id="projectType">
+                                    <option value="road">도로 포장</option>
+                                    <option value="walkway">산책로</option>
+                                    <option value="warehouse">물류센터</option>
+                                    <option value="parking">주차장</option>
+                                </select>
+                            </div>
+
+                            <button id="calculateCost" class="btn btn-secondary btn-block">계산하기</button>
+
+                            <div id="calculatorResult"></div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-box">
+                        <h3>📞 연락처 정보</h3>
+
+                        <div class="info-item">
+                            <div class="info-icon">🏢</div>
+                            <div class="info-content">
+                                <h4>본사</h4>
+                                <p>Georgia, Duluth, USA</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-content">
+                                <h4>이메일</h4>
+                                <p>info@grsusa.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>전화</h4>
+                                <p>+1 (XXX) XXX-XXXX</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🇰🇷</div>
+                            <div class="info-content">
+                                <h4>한국 지사</h4>
+                                <p>문의 가능 (contact@grskr.com)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="hours-box">
+                        <h4>⏰ 운영 시간</h4>
+                        <p>
+                            <strong>평일:</strong> 09:00 - 18:00 (KST)<br>
+                            <strong>주말:</strong> 휴무<br>
+                            <small>* 긴급 문의는 이메일로 보내주시면 최대한 빠르게 회신드립니다.</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container container-narrow">
+            <div class="section-header">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <p class="section-subtitle">
+                    고객님들이 자주 문의하시는 내용입니다
+                </p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4 class="faq-question">Q. GRS 기술은 어떤 기후 조건에서 사용 가능한가요?</h4>
+                    <div class="faq-answer">
+                        <p>
+                            GRS 토양경화 기술은 다양한 기후 조건에서 사용 가능합니다.
+                            단, 동결 기간이 긴 지역이나 극심한 고온 지역의 경우
+                            사전 현장 조사 및 배합 조정이 필요할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="faq-question">Q. 프로젝트 견적은 어떻게 산출되나요?</h4>
+                    <div class="faq-answer">
+                        <p>
+                            시공 면적, 현장 토양 상태, 프로젝트 유형 등을 종합적으로 고려하여
+                            맞춤형 견적을 제공해 드립니다. 정확한 견적을 위해서는
+                            현장 조사가 권장되며, 간단한 예상 견적은 위의 계산기를 이용해주세요.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="faq-question">Q. 시공 후 유지보수가 필요한가요?</h4>
+                    <div class="faq-answer">
+                        <p>
+                            GRS로 시공된 포장면은 기존 아스팔트 대비 유지보수 빈도가
+                            현저히 낮습니다. 정기적인 육안 점검만으로도 충분하며,
+                            필요 시 부분 보수가 가능합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="faq-question">Q. 파트너십은 어떻게 진행되나요?</h4>
+                    <div class="faq-answer">
+                        <p>
+                            독점 유통, 기술 라이선스, 합작 투자(JV) 등 다양한 협력 모델을 제공합니다.
+                            귀사의 사업 계획과 목표에 맞는 최적의 협력 방안을 제시해 드리니
+                            <a href="partnership.html">협력 방안 페이지</a>를 참고하시거나
+                            직접 문의해주세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GRS USA LLC</h4>
+                    <p style="line-height: 1.8; color: rgba(255, 255, 255, 0.7);">
+                        친환경 토양경화 기술과 특수 코팅 솔루션으로<br>
+                        지속가능한 미래를 만들어갑니다.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>주요 서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="solutions.html#grs">GRS 토양경화</a></li>
+                        <li><a href="solutions.html#shark">SHARK 페인트</a></li>
+                        <li><a href="solutions.html#coating">코팅 솔루션</a></li>
+                        <li><a href="business.html">사업 분야</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>회사 정보</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="projects.html">프로젝트 실적</a></li>
+                        <li><a href="partnership.html">협력 방안</a></li>
+                        <li><a href="contact.html">문의하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <ul class="footer-links">
+                        <li>📍 Georgia, Duluth, USA</li>
+                        <li>📧 info@grsusa.com</li>
+                        <li>📞 +1 (XXX) XXX-XXXX</li>
+                        <li>🇰🇷 한국 지사 문의 가능</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 GRS USA LLC. All rights reserved. | 친환경 건설 솔루션의 글로벌 리더</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
