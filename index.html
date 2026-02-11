@@ -1,366 +1,407 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html class="dark" lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="40% 비용 절감, 80% 탄소 감소. 검증된 GRS 토양경화 기술과 SHARK 친환경 페인트로 지속가능한 인프라를 구축하세요.">
-  <meta name="keywords" content="토양경화, 친환경 건설, GRS, 탄소 중립, 아스팔트 대체, SHARK 페인트, 건설 솔루션">
-  <title>GRS USA LLC | 친환경 토양경화 기술 & 코팅 솔루션</title>
+  <title>GRS USA LLC - 친환경 토양경화 기술 & 코팅 솔루션</title>
 
-  <!-- Google Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2e7d32",
+            secondary: "#0277bd",
+            "background-light": "#F8F9FA",
+            "background-dark": "#1A1C1E",
+            "accent-dark": "#2D3032",
+          },
+          fontFamily: {
+            sans: ["Inter", "Noto Sans KR", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(180deg, rgba(26, 28, 30, 0.7) 0%, rgba(26, 28, 30, 0.5) 50%, rgba(26, 28, 30, 0.95) 100%);
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-sans">
 
-  <!-- Header & Navigation -->
-  <header class="header" id="header">
-    <div class="container">
-      <nav class="nav">
-        <a href="index.html" class="nav-logo">
-          <span>GRS</span> USA LLC
-        </a>
-
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link active">홈</a></li>
-          <li><a href="about.html" class="nav-link">회사소개</a></li>
-          <li><a href="solutions.html" class="nav-link">기술 & 솔루션</a></li>
-          <li><a href="business.html" class="nav-link">사업분야</a></li>
-          <li><a href="projects.html" class="nav-link">프로젝트</a></li>
-          <li><a href="partnership.html" class="nav-link">협력방안</a></li>
-          <li><a href="contact.html" class="btn btn-primary">문의하기</a></li>
-        </ul>
-
-        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="메뉴 열기">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
+  <!-- Navigation -->
+  <nav
+    class="sticky top-0 z-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-white/5">
+    <div class="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto">
+      <div class="flex flex-col">
+        <span class="text-2xl font-bold dark:text-white leading-none">GRS USA LLC</span>
+        <span class="text-[10px] tracking-[0.2em] font-light dark:text-slate-400 mt-0.5">SUSTAINABLE SOLUTIONS</span>
+      </div>
+      <button class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-accent-dark">
+        <span class="material-icons">menu</span>
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content container">
-      <h1 class="hero-title">
-        친환경 토양경화 기술로<br>
-        <span class="gradient-text">미래를 만듭니다</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        검증된 글로벌 기술력으로 비용은 줄이고, 환경은 지키는<br>
-        차세대 건설 솔루션을 제공합니다
-      </p>
-
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="hero-stat-number">40%</span>
-          <span class="hero-stat-label">비용 절감</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">80%</span>
-          <span class="hero-stat-label">탄소 감소</span>
-        </div>
-        <div class="hero-stat">
-          <span class="hero-stat-number">$10M+</span>
-          <span class="hero-stat-label">글로벌 실적</span>
-        </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] flex flex-col justify-end px-6 pb-16 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="w-full h-full bg-gradient-to-br from-green-900 via-gray-800 to-blue-900"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
       </div>
 
-      <div class="hero-cta">
-        <a href="contact.html" class="btn btn-primary btn-large">프로젝트 시작하기</a>
-        <a href="projects.html" class="btn btn-outline btn-large">레퍼런스 보기</a>
-      </div>
-    </div>
-
-    <div class="scroll-indicator"></div>
-  </section>
-
-  <!-- Core Values Section -->
-  <section class="features" id="values">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">GRS의 핵심 가치</h2>
-        <p class="section-subtitle">
-          혁신적인 기술과 친환경 솔루션으로 건설 산업의 패러다임을 바꿉니다
+      <div class="relative z-10 space-y-6 max-w-7xl mx-auto">
+        <h1 class="text-4xl md:text-5xl leading-tight dark:text-white font-light">
+          친환경 토양경화 기술로<br />
+          <span class="font-semibold text-primary">지속가능한 미래</span>를 만듭니다
+        </h1>
+        <p class="text-slate-300 max-w-2xl font-light leading-relaxed text-lg">
+          검증된 글로벌 기술력으로 비용은 40% 절감하고, 탄소는 80% 감소시키는
+          차세대 친환경 건설 솔루션을 제공합니다.
         </p>
-      </div>
 
-      <div class="grid grid-cols-3">
-        <div class="card feature-card">
-          <div class="card-icon">💰</div>
-          <h3 class="card-title">경제성</h3>
-          <p class="card-description">
-            기존 아스팔트 공법 대비 <strong>40% 공사비 절감</strong>.
-            현장 토양을 그대로 활용하여 골재 운반비와 폐기물 처리 비용을 대폭 감소시킵니다.
-          </p>
-        </div>
-
-        <div class="card feature-card">
-          <div class="card-icon">🌱</div>
-          <h3 class="card-title">친환경</h3>
-          <p class="card-description">
-            탄소 배출 <strong>70-80% 감소</strong>로 탄소 중립 시대를 선도합니다.
-            시멘트와 아스팔트 의존도를 낮춰 지속가능한 인프라를 구축합니다.
-          </p>
-        </div>
-
-        <div class="card feature-card">
-          <div class="card-icon">🏆</div>
-          <h3 class="card-title">신뢰성</h3>
-          <p class="card-description">
-            4대강 사업, 여수 엑스포 등 <strong>국내외 검증된 레퍼런스</strong>.
-            미국 GRS USA LLC와의 파트너십으로 글로벌 기술력을 보장합니다.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solutions Preview Section -->
-  <section id="solutions-preview">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">주요 솔루션</h2>
-        <p class="section-subtitle">
-          토양경화부터 특수 코팅까지, 통합 솔루션으로 프로젝트를 완성합니다
-        </p>
-      </div>
-
-      <div class="solutions-grid">
-        <!-- Solution 1: GRS 토양경화 -->
-        <div class="solution-item">
-          <div class="solution-image">
-            <div class="solution-image-placeholder" style="background: linear-gradient(135deg, #2563eb, #1e40af);">
-              <span style="font-size: 4rem; color: white;">🛣️</span>
-            </div>
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="text-3xl font-bold text-primary mb-1">40%</div>
+            <div class="text-sm text-slate-300">비용 절감</div>
           </div>
-          <div class="solution-content">
-            <h3>GRS 토양경화 기술</h3>
-            <p>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="text-3xl font-bold text-primary mb-1">80%</div>
+            <div class="text-sm text-slate-300">탄소 감소</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="text-3xl font-bold text-primary mb-1">100+</div>
+            <div class="text-sm text-slate-300">프로젝트</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="text-3xl font-bold text-primary mb-1">$10M+</div>
+            <div class="text-sm text-slate-300">글로벌 실적</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 pt-4">
+          <button
+            class="bg-primary text-white font-medium py-4 px-8 rounded-full flex items-center justify-center gap-2 transition-transform hover:scale-105">
+            프로젝트 시작하기
+            <span class="material-icons">arrow_forward</span>
+          </button>
+          <button
+            class="border border-slate-400 dark:border-slate-600 dark:text-white py-4 px-8 rounded-full transition-all hover:bg-white/10">
+            솔루션 둘러보기
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 px-6 bg-slate-50 dark:bg-[#151718]">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <h2 class="text-3xl md:text-4xl dark:text-white mb-4 font-light">GRS의 핵심 가치</h2>
+          <div class="w-16 h-1 bg-primary"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="group">
+            <div
+              class="w-16 h-16 mb-6 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
+              <span class="material-icons text-primary text-4xl">savings</span>
+            </div>
+            <h3 class="text-2xl dark:text-white mb-3 font-medium">경제성</h3>
+            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">
+              기존 아스팔트 공법 대비 40% 공사비 절감. 현장 토양을 그대로 활용하여
+              골재 운반비와 폐기물 처리 비용을 대폭 감소시킵니다.
+            </p>
+          </div>
+
+          <div class="group">
+            <div
+              class="w-16 h-16 mb-6 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
+              <span class="material-icons text-primary text-4xl">eco</span>
+            </div>
+            <h3 class="text-2xl dark:text-white mb-3 font-medium">친환경</h3>
+            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">
+              탄소 배출 70-80% 감소로 탄소 중립 시대를 선도합니다.
+              시멘트와 아스팔트 의존도를 낮춰 지속가능한 인프라를 구축합니다.
+            </p>
+          </div>
+
+          <div class="group">
+            <div
+              class="w-16 h-16 mb-6 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
+              <span class="material-icons text-primary text-4xl">verified</span>
+            </div>
+            <h3 class="text-2xl dark:text-white mb-3 font-medium">신뢰성</h3>
+            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">
+              4대강 사업, 여수 엑스포 등 국내외 검증된 레퍼런스.
+              미국 GRS USA LLC와의 파트너십으로 글로벌 기술력을 보장합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="py-20 px-6 dark:bg-background-dark">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl md:text-4xl dark:text-white mb-4 font-light">주요 솔루션</h2>
+          <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+            토양경화부터 특수 코팅까지, 통합 솔루션으로 프로젝트를 완성합니다
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- GRS 토양경화 -->
+          <div class="bg-white dark:bg-accent-dark rounded-3xl p-8 border border-slate-200 dark:border-slate-800">
+            <div class="w-16 h-16 mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <span class="material-icons text-primary text-4xl">terrain</span>
+            </div>
+            <h3 class="text-2xl font-semibold dark:text-white mb-4">GRS 토양경화 기술</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
               현장 토양과 특수 경화제를 결합하여 고강도 포장면을 구현합니다.
-              도로, 산책로, 자전거 도로 등 다양한 인프라에 적용 가능합니다.
             </p>
-            <p style="margin-top: 0.75rem; font-size: 0.9rem; color: rgba(0,0,0,0.7);">
-              <strong>제품 라인업:</strong> SOIL-ONE (흙 포장용 결합제), SOIL-200 (흙블럭용 경화제), ECO-BINDER (흙 고화제)
-            </p>
-            <ul class="solution-features">
-              <li>✓ 골재 운반 불필요</li>
-              <li>✓ 양생 기간 50% 단축</li>
-              <li>✓ 투수성 유지로 홍수 예방</li>
-            </ul>
-            <a href="solutions.html#grs" class="btn btn-outline">자세히 보기</a>
-          </div>
-        </div>
-
-        <!-- Solution 2: SHARK 페인트 -->
-        <div class="solution-item reverse">
-          <div class="solution-image">
-            <div class="solution-image-placeholder" style="background: linear-gradient(135deg, #10b981, #059669);">
-              <span style="font-size: 4rem; color: white;">🎨</span>
+            <div class="space-y-2 mb-6">
+              <div class="text-sm text-slate-500 dark:text-slate-400">
+                <strong>제품:</strong> SOIL-ONE, SOIL-200, ECO-BINDER
+              </div>
+              <div class="text-sm text-slate-500 dark:text-slate-400">
+                <strong>용도:</strong> 도로, 산책로, 주차장, 농로
+              </div>
             </div>
+            <button class="text-primary font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+              자세히 보기 <span class="material-icons text-sm">arrow_forward</span>
+            </button>
           </div>
-          <div class="solution-content">
-            <h3>SHARK 친환경 페인트</h3>
-            <p>
+
+          <!-- SHARK 페인트 -->
+          <div class="bg-white dark:bg-accent-dark rounded-3xl p-8 border border-slate-200 dark:border-slate-800">
+            <div class="w-16 h-16 mb-6 rounded-2xl bg-secondary/10 flex items-center justify-center">
+              <span class="material-icons text-secondary text-4xl">brush</span>
+            </div>
+            <h3 class="text-2xl font-semibold dark:text-white mb-4">SHARK 친환경 페인트</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
               VOC 저감형 친환경 페인트로 건축, 산업시설, 인프라에 최적화되어 있습니다.
-              뛰어난 내구성과 내후성을 자랑합니다.
             </p>
-            <p style="margin-top: 0.75rem; font-size: 0.9rem; color: rgba(0,0,0,0.7);">
-              <strong>제품 라인업:</strong> SHARK-21 (유,무기 잠금도료), SHARK-TOP (유,무기 잠금도료 + 항균기능)
-            </p>
-            <ul class="solution-features">
-              <li>✓ 친환경 인증 획득</li>
-              <li>✓ 우수한 내구성 및 내후성</li>
-              <li>✓ 다양한 산업 적용 가능</li>
-            </ul>
-            <a href="solutions.html#shark" class="btn btn-outline">자세히 보기</a>
-          </div>
-        </div>
-
-        <!-- Solution 3: 통합 코팅 -->
-        <div class="solution-item">
-          <div class="solution-image">
-            <div class="solution-image-placeholder" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
-              <span style="font-size: 4rem; color: white;">🏗️</span>
+            <div class="space-y-2 mb-6">
+              <div class="text-sm text-slate-500 dark:text-slate-400">
+                <strong>제품:</strong> SHARK-21, SHARK-TOP
+              </div>
+              <div class="text-sm text-slate-500 dark:text-slate-400">
+                <strong>특징:</strong> 항균 기능, 고내구성, TVOC 무함유
+              </div>
             </div>
+            <button class="text-secondary font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+              자세히 보기 <span class="material-icons text-sm">arrow_forward</span>
+            </button>
           </div>
-          <div class="solution-content">
-            <h3>코팅 & 방수 솔루션</h3>
-            <p>
-              토양경화와 코팅을 결합한 패키지 상품으로 물류센터, 주차장,
-              공장 야적장 등에서 비산먼지 방지와 내마모성을 동시에 확보합니다.
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline / Milestones -->
+    <section class="py-20 px-6 bg-slate-50 dark:bg-[#151718]">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-center text-3xl md:text-4xl dark:text-white mb-16 font-light">Our Milestones</h2>
+
+        <div class="relative pl-8 border-l-2 border-primary/30 space-y-12">
+          <div class="relative">
+            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-dark">
+            </div>
+            <span class="text-primary font-bold text-sm tracking-widest">2024</span>
+            <h4 class="text-xl md:text-2xl mt-2 dark:text-white font-medium">제품 라인업 확대</h4>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">
+              SOIL-ONE, SOIL-200, ECO-BINDER 등 토양경화 제품 라인과 SHARK 페인트 시리즈를 정식 출시하여
+              통합 솔루션을 제공합니다.
             </p>
-            <ul class="solution-features">
-              <li>✓ 토양경화 + 코팅 패키지</li>
-              <li>✓ 비산먼지 방지</li>
-              <li>✓ 강화된 내마모성</li>
-            </ul>
-            <a href="solutions.html#coating" class="btn btn-outline">자세히 보기</a>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-dark">
+            </div>
+            <span class="text-primary font-bold text-sm tracking-widest">2020</span>
+            <h4 class="text-xl md:text-2xl mt-2 dark:text-white font-medium">글로벌 확장</h4>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">
+              미국 GRS USA LLC와 파트너십을 통해 글로벌 시장 진출. $10M+ 해외 매출 달성.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-dark">
+            </div>
+            <span class="text-primary font-bold text-sm tracking-widest">2012</span>
+            <h4 class="text-xl md:text-2xl mt-2 dark:text-white font-medium">여수 엑스포 프로젝트</h4>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">
+              여수 세계박람회 보행로 시공으로 친환경 기술력 검증 완료.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-background-dark">
+            </div>
+            <span class="text-primary font-bold text-sm tracking-widest">2008</span>
+            <h4 class="text-xl md:text-2xl mt-2 dark:text-white font-medium">4대강 사업 참여</h4>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">
+              대규모 국책사업 참여로 토양경화 기술의 우수성 입증.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Stats & Numbers Section -->
-  <section class="stats-section">
-    <div class="container">
-      <h2 class="section-title text-center" style="color: white; margin-bottom: var(--spacing-16);">
-        숫자로 보는 GRS
-      </h2>
-
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-number" data-count="1000">0</div>
-          <div class="stat-unit">만 달러+</div>
-          <div class="stat-label">해외 매출 실적</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-number" data-count="100">0</div>
-          <div class="stat-unit">+</div>
-          <div class="stat-label">완료 프로젝트</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-number" data-count="40">0</div>
-          <div class="stat-unit">%</div>
-          <div class="stat-label">비용 절감</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-number" data-count="80">0</div>
-          <div class="stat-unit">%</div>
-          <div class="stat-label">탄소 감소</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Business Areas Preview -->
-  <section id="business-preview">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">사업 분야</h2>
-        <p class="section-subtitle">
-          공공기관부터 민간기업까지, 다양한 영역에서 최적의 솔루션을 제공합니다
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2">
-        <div class="business-card">
-          <div class="business-icon">🏛️</div>
-          <h3>공공사업 (B2G)</h3>
-          <p>
-            지방자치단체, 국토교통부, LH, K-Water 등 공공기관을 대상으로
-            친환경 인프라 구축 솔루션을 제공합니다.
+    <!-- Newsletter -->
+    <section class="py-20 px-6 dark:bg-background-dark">
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-primary/10 rounded-3xl p-8 md:p-12 border border-primary/20">
+          <h3 class="text-2xl md:text-3xl font-light mb-3 dark:text-white">프로젝트를 시작하세요</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-8">
+            GRS의 전문가가 귀사의 프로젝트에 최적화된 솔루션을 제안해 드립니다.
           </p>
-          <ul class="business-list">
-            <li>도로 및 농로 포장</li>
-            <li>자전거 도로 및 산책로</li>
-            <li>공공 인프라 개선</li>
-          </ul>
-          <a href="business.html#b2g" class="btn btn-secondary">자세히 보기 →</a>
-        </div>
 
-        <div class="business-card">
-          <div class="business-icon">🏢</div>
-          <h3>민간사업 (B2B)</h3>
-          <p>
-            건설사, 산업시설, 레저/리조트, 재생에너지 분야에
-            맞춤형 토양경화 및 코팅 솔루션을 제공합니다.
-          </p>
-          <ul class="business-list">
-            <li>물류센터 및 공장 바닥재</li>
-            <li>아파트 단지 조경</li>
-            <li>태양광/풍력 발전 단지</li>
-          </ul>
-          <a href="business.html#b2b" class="btn btn-secondary">자세히 보기 →</a>
+          <form class="space-y-4">
+            <div>
+              <label class="text-xs uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 block mb-2">
+                이메일 *
+              </label>
+              <input type="email"
+                class="w-full bg-white dark:bg-accent-dark border-slate-200 dark:border-slate-700 rounded-lg text-sm px-4 py-3 focus:ring-primary focus:border-primary"
+                placeholder="your@email.com" />
+            </div>
+
+            <div>
+              <label class="text-xs uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 block mb-2">
+                프로젝트 유형
+              </label>
+              <select
+                class="w-full bg-white dark:bg-accent-dark border-slate-200 dark:border-slate-700 rounded-lg text-sm px-4 py-3 focus:ring-primary focus:border-primary">
+                <option>도로 포장</option>
+                <option>산책로/자전거 도로</option>
+                <option>물류센터/주차장</option>
+                <option>건축물 코팅</option>
+                <option>기타</option>
+              </select>
+            </div>
+
+            <div class="flex items-start gap-3 py-2">
+              <input type="checkbox" class="mt-1 rounded border-slate-300 text-primary focus:ring-primary" />
+              <label class="text-xs text-slate-500 dark:text-slate-400">
+                뉴스레터 및 프로젝트 정보 수신에 동의합니다.
+              </label>
+            </div>
+
+            <button
+              class="w-full bg-primary text-white font-medium py-4 rounded-full shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+              무료 상담 신청
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2>지금 바로 프로젝트를 시작하세요</h2>
-        <p>
-          GRS의 전문가가 귀사의 프로젝트에 최적화된 솔루션을 제안해 드립니다.
-          무료 상담 및 견적을 받아보세요.
-        </p>
-        <div class="cta-buttons">
-          <a href="contact.html" class="btn btn-primary btn-large">무료 견적 받기</a>
-          <a href="partnership.html" class="btn btn-outline btn-large" style="border-color: white; color: white;">파트너십
-            문의</a>
+    <!-- Partners -->
+    <section class="py-16 px-6 bg-slate-100 dark:bg-black/20">
+      <div class="max-w-7xl mx-auto">
+        <h4 class="text-center text-xs font-medium tracking-widest text-slate-400 uppercase mb-10">
+          신뢰하는 파트너
+        </h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-60">
+          <div class="flex items-center justify-center h-16 text-slate-600 dark:text-slate-400 font-bold text-lg">
+            K-Water
+          </div>
+          <div class="flex items-center justify-center h-16 text-slate-600 dark:text-slate-400 font-bold text-lg">
+            LH 한국토지주택공사
+          </div>
+          <div
+            class="flex items-center justify-center h-16 text-slate-600 dark:text-slate-400 font-bold text-lg italic">
+            국토교통부
+          </div>
+          <div class="flex items-center justify-center h-16 text-slate-600 dark:text-slate-400 font-bold text-lg">
+            환경부
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>GRS USA LLC</h4>
-          <p style="line-height: 1.8; color: rgba(255, 255, 255, 0.7);">
-            친환경 토양경화 기술과 특수 코팅 솔루션으로<br>
-            지속가능한 미래를 만들어갑니다.
+  <footer class="pt-20 pb-12 px-6 bg-slate-50 dark:bg-background-dark border-t border-slate-200 dark:border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <div class="mb-6">
+            <span class="text-3xl font-bold dark:text-white">GRS USA LLC</span>
+            <p class="text-xs tracking-[0.3em] text-slate-400 mt-1">SUSTAINABLE SOLUTIONS</p>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-md">
+            친환경 토양경화 기술과 특수 코팅 솔루션으로 지속가능한 미래를 만들어갑니다.
           </p>
         </div>
 
-        <div class="footer-section">
-          <h4>주요 서비스</h4>
-          <ul class="footer-links">
-            <li><a href="solutions.html#grs">GRS 토양경화</a></li>
-            <li><a href="solutions.html#shark">SHARK 페인트</a></li>
-            <li><a href="solutions.html#coating">코팅 솔루션</a></li>
-            <li><a href="business.html">사업 분야</a></li>
+        <div>
+          <h5 class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-4">회사</h5>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-sm text-slate-600 dark:text-slate-300 hover:text-primary">회사소개</a></li>
+            <li><a href="solutions.html" class="text-sm text-slate-600 dark:text-slate-300 hover:text-primary">기술 &
+                솔루션</a></li>
+            <li><a href="projects.html" class="text-sm text-slate-600 dark:text-slate-300 hover:text-primary">프로젝트</a>
+            </li>
           </ul>
         </div>
 
-        <div class="footer-section">
-          <h4>회사 정보</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">회사소개</a></li>
-            <li><a href="projects.html">프로젝트 실적</a></li>
-            <li><a href="partnership.html">협력 방안</a></li>
-            <li><a href="contact.html">문의하기</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4>연락처</h4>
-          <ul class="footer-links">
-            <li>📍 Georgia, Duluth, USA</li>
-            <li>📧 info@grsusa.com</li>
-            <li>📞 +1 (XXX) XXX-XXXX</li>
-            <li>🇰🇷 한국 지사 문의 가능</li>
+        <div>
+          <h5 class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-4">지원</h5>
+          <ul class="space-y-2">
+            <li><a href="contact.html" class="text-sm text-slate-600 dark:text-slate-300 hover:text-primary">문의하기</a>
+            </li>
+            <li><a href="partnership.html"
+                class="text-sm text-slate-600 dark:text-slate-300 hover:text-primary">파트너십</a></li>
+            <li><a href="#" class="text-sm text-slate-600 dark:text-slate-300 hover:text-primary">개인정보처리방침</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 GRS USA LLC. All rights reserved. | 친환경 건설 솔루션의 글로벌 리더</p>
+      <div class="pt-8 border-t border-slate-200 dark:border-slate-800">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-slate-400 uppercase tracking-widest">
+            © 2026 GRS USA LLC. All rights reserved.
+          </p>
+          <div class="flex gap-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-slate-200 dark:bg-accent-dark flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-all">
+              <span class="material-icons text-lg">link</span>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-slate-200 dark:bg-accent-dark flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-all">
+              <span class="material-icons text-lg">email</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
 </body>
 
 </html>
